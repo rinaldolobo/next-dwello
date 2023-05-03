@@ -1,0 +1,1220 @@
+@font-face {
+  font-family: "dwelloicfont";
+  src: url("https://storage.googleapis.com/mumbai.cdn.dwello.in/FontsCompressed/dwelloicfont.ttf?cfs5jp")
+      format("truetype"),
+    url("https://storage.googleapis.com/mumbai.cdn.dwello.in/FontsCompressed/dwelloicfont.woff?cfs5jp")
+      format("woff"),
+    url("https://storage.googleapis.com/mumbai.cdn.dwello.in/FontsCompressed/dwelloicfont.svg?cfs5jp#dwelloicfont")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.dwelloicfont {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "dwelloicfont" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.dwelloicfont_offer_no_registration_fee:before {
+  content: "\ea73";
+}
+.dwelloicfont_offer_subvention:before {
+  content: "\ea75";
+}
+.dwelloicfont_cp_rental_income:before {
+  content: "\ea60";
+}
+.dwelloicfont_cp_resale_alternatives:before {
+  content: "\ea61";
+}
+.dwelloicfont_cp_social_entertainment:before {
+  content: "\ea62";
+}
+.dwelloicfont_cp_space_optimization1:before {
+  content: "\ea63";
+}
+.dwelloicfont_cp_vicinity_construction_age1:before {
+  content: "\ea64";
+}
+.dwelloicfont_cp_vicinity_homes1:before {
+  content: "\ea65";
+}
+.dwelloicfont_cp_worship_places1:before {
+  content: "\ea66";
+}
+.dwelloicfont_cp_nearest_necessities1:before {
+  content: "\ea67";
+}
+.dwelloicfont_cp_nearest_transits1:before {
+  content: "\ea68";
+}
+.dwelloicfont_offer_assured_gift:before {
+  content: "\ea69";
+}
+.dwelloicfont_offer_discount_on_price:before {
+  content: "\ea6a";
+}
+.dwelloicfont_offer_discount_on_taxes:before {
+  content: "\ea6b";
+}
+.dwelloicfont_offer_free_valuables:before {
+  content: "\ea6c";
+}
+.dwelloicfont_offer_get_rent_for_defined_period:before {
+  content: "\ea6d";
+}
+.dwelloicfont_offer_interest_on_possession_delay:before {
+  content: "\ea6e";
+}
+.dwelloicfont_offer_lucky_draw:before {
+  content: "\ea6f";
+}
+.dwelloicfont_offer_no_emi_till_possession:before {
+  content: "\ea70";
+}
+.dwelloicfont_offer_no_floor_rise:before {
+  content: "\ea71";
+}
+.dwelloicfont_offer_no_gst_impact:before {
+  content: "\ea72";
+}
+.dwelloicfont_offer_no_stamp_duty:before {
+  content: "\ea74";
+}
+.dwelloicfont_cp_air_quality1:before {
+  content: "\ea76";
+}
+.dwelloicfont_cp_amenities_progress1:before {
+  content: "\ea77";
+}
+.dwelloicfont_cp_apartments_density1:before {
+  content: "\ea78";
+}
+.dwelloicfont_cp_availability1:before {
+  content: "\ea79";
+}
+.dwelloicfont_cp_boundaries:before {
+  content: "\ea7a";
+}
+.dwelloicfont_cp_buisnesses_around:before {
+  content: "\ea7b";
+}
+.dwelloicfont_cp_common_surnames1:before {
+  content: "\ea7c";
+}
+.dwelloicfont_cp_commute_to_work1:before {
+  content: "\ea7d";
+}
+.dwelloicfont_cp_construction_progress1:before {
+  content: "\ea7e";
+}
+.dwelloicfont_cp_crimes_in_neighbourhood1:before {
+  content: "\ea7f";
+}
+.dwelloicfont_cp_customer_rating_and_review1:before {
+  content: "\ea80";
+}
+.dwelloicfont_cp_developer_experience1:before {
+  content: "\ea81";
+}
+.dwelloicfont_cp_developer_rating1:before {
+  content: "\ea82";
+}
+.dwelloicfont_cp_documents1:before {
+  content: "\ea83";
+}
+.dwelloicfont_cp_members_and_promoters1:before {
+  content: "\ea84";
+}
+.dwelloicfont_cp_negatives1:before {
+  content: "\ea85";
+}
+.dwelloicfont_cp_neighbourhood_traffic_condition1:before {
+  content: "\ea86";
+}
+.dwelloicfont_cp_popularity1:before {
+  content: "\ea87";
+}
+.dwelloicfont_cp_population_density1:before {
+  content: "\ea88";
+}
+.dwelloicfont_cp_price_wrt_vicinity1:before {
+  content: "\ea89";
+}
+.dwelloicfont_cp_project_complaints1:before {
+  content: "\ea8a";
+}
+.dwelloicfont_cp_project_litigations1:before {
+  content: "\ea8b";
+}
+.dwelloicfont_cp_public_amenities:before {
+  content: "\ea8c";
+}
+.dwelloicfont_cp_recreation_space_allocation1:before {
+  content: "\ea8d";
+}
+.dwelloicfont_cp_air_quality:before {
+  content: "\ea50";
+}
+.dwelloicfont_cp_amenities_progress:before {
+  content: "\ea51";
+}
+.dwelloicfont_cp_availability:before {
+  content: "\ea52";
+}
+.dwelloicfont_cp_common_surnames:before {
+  content: "\ea53";
+}
+.dwelloicfont_cp_commute_to_work:before {
+  content: "\ea54";
+}
+.dwelloicfont_cp_construction_progress:before {
+  content: "\ea55";
+}
+.dwelloicfont_cp_customer_rating_and_review:before {
+  content: "\ea56";
+}
+.dwelloicfont_cp_developer_rating:before {
+  content: "\ea57";
+}
+.dwelloicfont_cp_documents:before {
+  content: "\ea58";
+}
+.dwelloicfont_cp_nearest_necessities:before {
+  content: "\ea59";
+}
+.dwelloicfont_cp_nearest_transits:before {
+  content: "\ea5a";
+}
+.dwelloicfont_cp_negatives:before {
+  content: "\ea5b";
+}
+.dwelloicfont_cp_neighbourhood_traffic_condition:before {
+  content: "\ea5c";
+}
+.dwelloicfont_cp_popularity:before {
+  content: "\ea5d";
+}
+.dwelloicfont_cp_space_optimization:before {
+  content: "\ea5e";
+}
+.dwelloicfont_cp_vicinity_construction_age:before {
+  content: "\ea5f";
+}
+.dwelloicfont_download_document:before {
+  content: "\ea4f";
+}
+.dwelloicfont_balcony_flooring:before {
+  content: "\ea3f";
+}
+.dwelloicfont_cp_apartments_density:before {
+  content: "\ea44";
+}
+.dwelloicfont_cp_crimes_in_neighbourhood:before {
+  content: "\ea45";
+}
+.dwelloicfont_cp_developer_experience:before {
+  content: "\ea46";
+}
+.dwelloicfont_cp_members_and_promoters:before {
+  content: "\ea47";
+}
+.dwelloicfont_cp_recreation_space_allocation:before {
+  content: "\ea48";
+}
+.dwelloicfont_cp_population_density:before {
+  content: "\ea49";
+}
+.dwelloicfont_cp_price_wrt_vicinity:before {
+  content: "\ea4a";
+}
+.dwelloicfont_cp_project_complaints:before {
+  content: "\ea4b";
+}
+.dwelloicfont_cp_project_litigations:before {
+  content: "\ea4c";
+}
+.dwelloicfont_cp_vicinity_homes:before {
+  content: "\ea4d";
+}
+.dwelloicfont_cp_worship_places:before {
+  content: "\ea4e";
+}
+.dwelloicfont_star_quarter:before {
+  content: "\ea42";
+}
+.dwelloicfont_star_three_quarters:before {
+  content: "\ea43";
+}
+.dwelloicfont_star_full:before {
+  content: "\ea40";
+}
+.dwelloicfont_star_half:before {
+  content: "\ea41";
+}
+.dwelloicfont_verify_otp:before {
+  content: "\ea3e";
+}
+.dwelloicfont_info:before {
+  content: "\ea3d";
+}
+.dwelloicfont_remove:before {
+  content: "\ea3c";
+}
+.dwelloicfont_master_bedroom_flooring:before {
+  content: "\ea34";
+}
+.dwelloicfont_other_bedrooms_flooring:before {
+  content: "\ea35";
+}
+.dwelloicfont_passage:before {
+  content: "\ea36";
+}
+.dwelloicfont_bathrooms_flooring:before {
+  content: "\ea37";
+}
+.dwelloicfont_fire_extinguisher:before {
+  content: "\ea38";
+}
+.dwelloicfont_kitchen_flooring:before {
+  content: "\ea39";
+}
+.dwelloicfont_living_and_dining_flooring:before {
+  content: "\ea3a";
+}
+.dwelloicfont_construction_progress:before {
+  content: "\ea32";
+}
+.dwelloicfont_publishing_noresults:before {
+  content: "\ea2f";
+}
+.dwelloicfont_project_intelligence:before {
+  content: "\ea30";
+}
+.dwelloicfont_project:before {
+  content: "\ea31";
+}
+.dwelloicfont_about_developer:before {
+  content: "\ea1b";
+}
+.dwelloicfont_accessibility:before {
+  content: "\ea1c";
+}
+.dwelloicfont_affordability:before {
+  content: "\ea1d";
+}
+.dwelloicfont_amenities:before {
+  content: "\ea1e";
+}
+.dwelloicfont_availability:before {
+  content: "\ea1f";
+}
+.dwelloicfont_community:before {
+  content: "\ea20";
+}
+.dwelloicfont_configuration:before {
+  content: "\ea21";
+}
+.dwelloicfont_from_knowledgebase:before {
+  content: "\ea22";
+}
+.dwelloicfont_gallery:before {
+  content: "\ea23";
+}
+.dwelloicfont_highlights:before {
+  content: "\ea24";
+}
+.dwelloicfont_livability:before {
+  content: "\ea25";
+}
+.dwelloicfont_local_market:before {
+  content: "\ea26";
+}
+.dwelloicfont_negatives:before {
+  content: "\ea27";
+}
+.dwelloicfont_project_buildings:before {
+  content: "\ea28";
+}
+.dwelloicfont_project_location:before {
+  content: "\ea29";
+}
+.dwelloicfont_project_progress:before {
+  content: "\ea2a";
+}
+.dwelloicfont_sentiment:before {
+  content: "\ea2b";
+}
+.dwelloicfont_similar_projects:before {
+  content: "\ea2c";
+}
+.dwelloicfont_specification:before {
+  content: "\ea2d";
+}
+.dwelloicfont_utilization:before {
+  content: "\ea2e";
+}
+.dwelloicfont_publishing_tag:before {
+  content: "\ea1a";
+}
+.dwelloicfont_linkedin:before {
+  content: "\ea0c";
+}
+.dwelloicfont_youtube:before {
+  content: "\ea19";
+}
+.dwelloicfont_rupee:before {
+  content: "\e944";
+}
+.dwelloicfont_edit:before {
+  content: "\e942";
+}
+.dwelloicfont_site_visit_empty_state:before {
+  content: "\e943";
+}
+.dwelloicfont_close_thick:before {
+  content: "\e926";
+}
+.dwelloicfont_master_bedroom:before {
+  content: "\e924";
+}
+.dwelloicfont_pie_chart:before {
+  content: "\ea14";
+}
+.dwelloicfont_profile_dev:before {
+  content: "\ea15";
+}
+.dwelloicfont_shake_hands:before {
+  content: "\ea16";
+}
+.dwelloicfont_topopen_box:before {
+  content: "\ea17";
+}
+.dwelloicfont_growth:before {
+  content: "\ea18";
+}
+.dwelloicfont_building:before {
+  content: "\ea0e";
+}
+.dwelloicfont_consultant:before {
+  content: "\ea0f";
+}
+.dwelloicfont_folded_newspaper:before {
+  content: "\ea10";
+}
+.dwelloicfont_full_view:before {
+  content: "\ea11";
+}
+.dwelloicfont_reset:before {
+  content: "\ea12";
+}
+.dwelloicfont_site_location:before {
+  content: "\ea13";
+}
+.dwelloicfont_automation_console:before {
+  content: "\ea0d";
+}
+.dwelloicfont_share:before {
+  content: "\ea0b";
+}
+.dwelloicfont_pdf:before {
+  content: "\ea0a";
+}
+.dwelloicfont_caret_up:before {
+  content: "\ea09";
+}
+.dwelloicfont_individual:before {
+  content: "\ea05";
+}
+.dwelloicfont_managing_director:before {
+  content: "\ea06";
+}
+.dwelloicfont_others:before {
+  content: "\ea07";
+}
+.dwelloicfont_partnership:before {
+  content: "\ea08";
+}
+.dwelloicfont_bookmark:before {
+  content: "\ea03";
+}
+.dwelloicfont_offer_o:before {
+  content: "\ea04";
+}
+.dwelloicfont_company:before {
+  content: "\ea02";
+}
+.dwelloicfont_partner:before {
+  content: "\e9fc";
+}
+.dwelloicfont_company_secretary:before {
+  content: "\e9fd";
+}
+.dwelloicfont_authorized_secretary:before {
+  content: "\e9fe";
+}
+.dwelloicfont_chairperson:before {
+  content: "\e9ff";
+}
+.dwelloicfont_authorized_signatory:before {
+  content: "\ea00";
+}
+.dwelloicfont_pdf_file:before {
+  content: "\ea01";
+}
+.dwelloicfont_accident:before {
+  content: "\e9ef";
+}
+.dwelloicfont_accident_death:before {
+  content: "\e9f0";
+}
+.dwelloicfont_assault:before {
+  content: "\e9f1";
+}
+.dwelloicfont_burglary:before {
+  content: "\e9f2";
+}
+.dwelloicfont_cheating:before {
+  content: "\e9f3";
+}
+.dwelloicfont_criminal_intimidation:before {
+  content: "\e9f4";
+}
+.dwelloicfont_extortion:before {
+  content: "\e9f5";
+}
+.dwelloicfont_homicide:before {
+  content: "\e9f6";
+}
+.dwelloicfont_homicide_attempt:before {
+  content: "\e9f7";
+}
+.dwelloicfont_kidnapping:before {
+  content: "\e9f8";
+}
+.dwelloicfont_robbery:before {
+  content: "\e9f9";
+}
+.dwelloicfont_serious_assault:before {
+  content: "\e9fa";
+}
+.dwelloicfont_theft:before {
+  content: "\e9fb";
+}
+.dwelloicfont_fraud:before {
+  content: "\e9ed";
+}
+.dwelloicfont_responsible_for_death:before {
+  content: "\e9ee";
+}
+.dwelloicfont_sn_whatsapp:before {
+  content: "\e9ea";
+}
+.dwelloicfont_sn_email:before {
+  content: "\e9eb";
+}
+.dwelloicfont_sn_copy_link:before {
+  content: "\e9ec";
+}
+.dwelloicfont_sn_twitter:before {
+  content: "\e9e4";
+}
+.dwelloicfont_sn_googleplus:before {
+  content: "\e9e7";
+}
+.dwelloicfont_sn_instagram:before {
+  content: "\e9e8";
+}
+.dwelloicfont_sn_medium:before {
+  content: "\e9e9";
+}
+.dwelloicfont_angle_down:before {
+  content: "\e9c6";
+}
+.dwelloicfont_angle_left:before {
+  content: "\e9c7";
+}
+.dwelloicfont_angle_right:before {
+  content: "\e9c8";
+}
+.dwelloicfont_angle_up:before {
+  content: "\e9c9";
+}
+.dwelloicfont_bars:before {
+  content: "\e9ca";
+}
+.dwelloicfont_bars_alt:before {
+  content: "\e9cb";
+}
+.dwelloicfont_bell:before {
+  content: "\e9cc";
+}
+.dwelloicfont_bell_o:before {
+  content: "\e9cd";
+}
+.dwelloicfont_bookmark_o:before {
+  content: "\e9ce";
+}
+.dwelloicfont_caret_down:before {
+  content: "\e9cf";
+}
+.dwelloicfont_check:before {
+  content: "\e9d0";
+}
+.dwelloicfont_check_circle_o:before {
+  content: "\e9d1";
+}
+.dwelloicfont_check_circle_o_alt:before {
+  content: "\e9d2";
+}
+.dwelloicfont_heart:before {
+  content: "\e9d3";
+}
+.dwelloicfont_herat_o:before {
+  content: "\e9d4";
+}
+.dwelloicfont_history:before {
+  content: "\e9d5";
+}
+.dwelloicfont_image:before {
+  content: "\e9d6";
+}
+.dwelloicfont_lock:before {
+  content: "\e9d7";
+}
+.dwelloicfont_map_o:before {
+  content: "\e9d8";
+}
+.dwelloicfont_plus:before {
+  content: "\e9d9";
+}
+.dwelloicfont_question_circle:before {
+  content: "\e9da";
+}
+.dwelloicfont_question_circle_o:before {
+  content: "\e9db";
+}
+.dwelloicfont_search:before {
+  content: "\e9dc";
+}
+.dwelloicfont_sign_out:before {
+  content: "\e9dd";
+}
+.dwelloicfont_sn_facebook:before {
+  content: "\e9de";
+}
+.dwelloicfont_sn_google:before {
+  content: "\e9df";
+}
+.dwelloicfont_star:before {
+  content: "\e9e0";
+}
+.dwelloicfont_times:before {
+  content: "\e9e1";
+}
+.dwelloicfont_user:before {
+  content: "\e9e2";
+}
+.dwelloicfont_wiring:before {
+  content: "\e9e3";
+}
+.dwelloicfont_phone:before {
+  content: "\e9c4";
+}
+.dwelloicfont_enquire:before {
+  content: "\e9c5";
+}
+.dwelloicfont_chat_send:before {
+  content: "\e9c2";
+}
+.dwelloicfont_chat:before {
+  content: "\e9c3";
+}
+.dwelloicfont_population:before {
+  content: "\e9c1";
+}
+.dwelloicfont_indoor_game_zone:before {
+  content: "\e9bb";
+}
+.dwelloicfont_mini_theatre:before {
+  content: "\e9bc";
+}
+.dwelloicfont_theatre:before {
+  content: "\e9c0";
+}
+.dwelloicfont_party_hall:before {
+  content: "\e9bd";
+}
+.dwelloicfont_senior_citizens_area:before {
+  content: "\e9be";
+}
+.dwelloicfont_basement_and_plinth:before {
+  content: "\e9b3";
+}
+.dwelloicfont_excavation:before {
+  content: "\e9b4";
+}
+.dwelloicfont_internal_finishing:before {
+  content: "\e9b5";
+}
+.dwelloicfont_oc_ready:before {
+  content: "\e9b6";
+}
+.dwelloicfont_podium:before {
+  content: "\e9b7";
+}
+.dwelloicfont_sanitary_and_electrical_fittings:before {
+  content: "\e9b8";
+}
+.dwelloicfont_slabs_of_super_structure:before {
+  content: "\e9b9";
+}
+.dwelloicfont_staircase_lift_water_taks:before {
+  content: "\e9ba";
+}
+.dwelloicfont_stilt_floor:before {
+  content: "\e9bf";
+}
+.dwelloicfont_kids_play_area:before {
+  content: "\e9b1";
+}
+.dwelloicfont_society_office:before {
+  content: "\e9b2";
+}
+.dwelloicfont_community_buildings:before {
+  content: "\e9a0";
+}
+.dwelloicfont_electrical:before {
+  content: "\e9a1";
+}
+.dwelloicfont_energy_management:before {
+  content: "\e9a2";
+}
+.dwelloicfont_fire_protection:before {
+  content: "\e9a3";
+}
+.dwelloicfont_fitness_center:before {
+  content: "\e9a4";
+}
+.dwelloicfont_internal_roads_footpaths:before {
+  content: "\e9a5";
+}
+.dwelloicfont_landscaping:before {
+  content: "\e9a6";
+}
+.dwelloicfont_open_parking:before {
+  content: "\e9a7";
+}
+.dwelloicfont_rain_water_harvesting:before {
+  content: "\e9a8";
+}
+.dwelloicfont_recreational_open_space:before {
+  content: "\e9a9";
+}
+.dwelloicfont_sewage_treatment:before {
+  content: "\e9aa";
+}
+.dwelloicfont_sewerage:before {
+  content: "\e9ab";
+}
+.dwelloicfont_solid_waste_management:before {
+  content: "\e9ac";
+}
+.dwelloicfont_storm_water_drain:before {
+  content: "\e9ad";
+}
+.dwelloicfont_street_lighting:before {
+  content: "\e9ae";
+}
+.dwelloicfont_SwimmingPool:before {
+  content: "\e9af";
+}
+.dwelloicfont_water_supply:before {
+  content: "\e9b0";
+}
+.dwelloicfont_my_location:before {
+  content: "\e99f";
+}
+.dwelloicfont_directions:before {
+  content: "\e99e";
+}
+.dwelloicfont_offer:before {
+  content: "\e99d";
+}
+.dwelloicfont_BedroomsPreference:before {
+  content: "\e995";
+}
+.dwelloicfont_CustomerConnection:before {
+  content: "\e996";
+}
+.dwelloicfont_DeveloperFamiliarity:before {
+  content: "\e997";
+}
+.dwelloicfont_DeveloperTrust:before {
+  content: "\e998";
+}
+.dwelloicfont_FirstBuy:before {
+  content: "\e999";
+}
+.dwelloicfont_LocationPreference:before {
+  content: "\e99a";
+}
+.dwelloicfont_PriceRange:before {
+  content: "\e99b";
+}
+.dwelloicfont_Purpose:before {
+  content: "\e99c";
+}
+.dwelloicfont_CommunityEvents:before {
+  content: "\e985";
+}
+.dwelloicfont_FriendlyNeighbourhood:before {
+  content: "\e986";
+}
+.dwelloicfont_GroceryStoresAccessibility:before {
+  content: "\e987";
+}
+.dwelloicfont_HolidaysDecoration:before {
+  content: "\e988";
+}
+.dwelloicfont_HowDoYouKnowLocality:before {
+  content: "\e989";
+}
+.dwelloicfont_KidsFriendly:before {
+  content: "\e98a";
+}
+.dwelloicfont_LitSidewalks:before {
+  content: "\e98b";
+}
+.dwelloicfont_LongTermStay:before {
+  content: "\e98c";
+}
+.dwelloicfont_NeedCar:before {
+  content: "\e98d";
+}
+.dwelloicfont_Parking:before {
+  content: "\e98e";
+}
+.dwelloicfont_PetFriendly:before {
+  content: "\e98f";
+}
+.dwelloicfont_RestaurantsAccessibility:before {
+  content: "\e990";
+}
+.dwelloicfont_SafeInDark:before {
+  content: "\e991";
+}
+.dwelloicfont_Sidewalks:before {
+  content: "\e992";
+}
+.dwelloicfont_SocialNeighbourhood:before {
+  content: "\e993";
+}
+.dwelloicfont_WildAnimals:before {
+  content: "\e994";
+}
+.dwelloicfont_StreetNoise:before {
+  content: "\e984";
+}
+.dwelloicfont_subscribe:before {
+  content: "\e982";
+}
+.dwelloicfont_shortlist:before {
+  content: "\e983";
+}
+.dwelloicfont_maharera:before {
+  content: "\e981";
+}
+.dwelloicfont_arrow-left:before {
+  content: "\e97f";
+}
+.dwelloicfont_contact_us_trophy:before {
+  content: "\e980";
+}
+.dwelloicfont_p2page_region:before {
+  content: "\e97e";
+}
+.dwelloicfont_p2page_neighbourhood:before {
+  content: "\e97c";
+}
+.dwelloicfont_p2page_town:before {
+  content: "\e97b";
+}
+.dwelloicfont_p2page_locality:before {
+  content: "\e979";
+}
+.dwelloicfont_p2page_suburb:before {
+  content: "\e97a";
+}
+.dwelloicfont_p2page_street:before {
+  content: "\e978";
+}
+.dwelloicfont_p2page_launch:before {
+  content: "\e976";
+}
+.dwelloicfont_p2_map:before {
+  content: "\e977";
+}
+.dwelloicfont_p2_list:before {
+  content: "\e975";
+}
+.dwelloicfont_p2page_project_segment:before {
+  content: "\e974";
+}
+.dwelloicfont_p2page_ticket_size:before {
+  content: "\e970";
+}
+.dwelloicfont_p2page_developer_rating:before {
+  content: "\e96f";
+}
+.dwelloicfont_p2page_developer:before {
+  content: "\e96e";
+}
+.dwelloicfont_p2page_developer_established:before {
+  content: "\e97d";
+}
+.dwelloicfont_dining:before {
+  content: "\e96b";
+}
+.dwelloicfont_powder_room:before {
+  content: "\e964";
+}
+.dwelloicfont_bathroom:before {
+  content: "\e965";
+}
+.dwelloicfont_bedroom:before {
+  content: "\e966";
+}
+.dwelloicfont_p2page_bedrooms:before {
+  content: "\e973";
+}
+.dwelloicfont_living_room:before {
+  content: "\e967";
+}
+.dwelloicfont_living_room_2:before {
+  content: "\e968";
+}
+.dwelloicfont_solar_water_heater:before {
+  content: "\e960";
+}
+.dwelloicfont_geyser:before {
+  content: "\ea3b";
+}
+.dwelloicfont_bathroom_cp_fittings:before {
+  content: "\e95f";
+}
+.dwelloicfont_bathroom_sanitory_ware:before {
+  content: "\e95c";
+}
+.dwelloicfont_squash_court:before {
+  content: "\e95b";
+}
+.dwelloicfont_kitchen_sink:before {
+  content: "\e900";
+}
+.dwelloicfont_arrow:before {
+  content: "\e958";
+}
+.dwelloicfont_childrens_play_area:before {
+  content: "\e956";
+}
+.dwelloicfont_multipurpose_court:before {
+  content: "\e957";
+}
+.dwelloicfont_indoor_games:before {
+  content: "\e955";
+}
+.dwelloicfont_interior_wall_paint:before {
+  content: "\e94d";
+}
+.dwelloicfont_exterior_wall_paint:before {
+  content: "\e961";
+}
+.dwelloicfont_reflexology_path:before {
+  content: "\e953";
+}
+.dwelloicfont_rcc_structure:before {
+  content: "\e94a";
+}
+.dwelloicfont_intercom:before {
+  content: "\e951";
+}
+.dwelloicfont_video_door_phone:before {
+  content: "\e95e";
+}
+.dwelloicfont_window_sill:before {
+  content: "\e952";
+}
+.dwelloicfont_window_type:before {
+  content: "\e95d";
+}
+.dwelloicfont_wash_basin_counter:before {
+  content: "\e94b";
+}
+.dwelloicfont_door_lock:before {
+  content: "\e94c";
+}
+.dwelloicfont_electrical_switches:before {
+  content: "\e94e";
+}
+.dwelloicfont_electrical_wiring:before {
+  content: "\e94f";
+}
+.dwelloicfont_mosquito_mesh:before {
+  content: "\e949";
+}
+.dwelloicfont_gazebo:before {
+  content: "\e948";
+}
+.dwelloicfont_exhaust_fan:before {
+  content: "\e945";
+}
+.dwelloicfont_dg_power_backup:before {
+  content: "\e946";
+}
+.dwelloicfont_logo:before {
+  content: "\e95a";
+}
+.dwelloicfont_yoga_zone:before {
+  content: "\e902";
+}
+.dwelloicfont_meditation_center:before {
+  content: "\e959";
+}
+.dwelloicfont_restaurant:before {
+  content: "\e903";
+}
+.dwelloicfont_basketball_court:before {
+  content: "\e904";
+}
+.dwelloicfont_kitchen_platform:before {
+  content: "\e905";
+}
+.dwelloicfont_kitchen:before {
+  content: "\e96a";
+}
+.dwelloicfont_modular_kitchen:before {
+  content: "\e9e5";
+}
+.dwelloicfont_landscaped_garden:before {
+  content: "\e909";
+}
+.dwelloicfont_multi_tier_security:before {
+  content: "\e90a";
+}
+.dwelloicfont_utility_stores:before {
+  content: "\e90b";
+}
+.dwelloicfont_electrical_points:before {
+  content: "\e90c";
+}
+.dwelloicfont_vollyball_court:before {
+  content: "\e90d";
+}
+.dwelloicfont_library:before {
+  content: "\e90e";
+}
+.dwelloicfont_telephone_connection:before {
+  content: "\e90f";
+}
+.dwelloicfont_call:before {
+  content: "\e954";
+}
+.dwelloicfont_aerobics:before {
+  content: "\e910";
+}
+.dwelloicfont_security:before {
+  content: "\e911";
+}
+.dwelloicfont_gas_cyliner:before {
+  content: "\e912";
+}
+.dwelloicfont_atm:before {
+  content: "\e913";
+}
+.dwelloicfont_bathroom_walls:before {
+  content: "\e915";
+}
+.dwelloicfont_party_lawn:before {
+  content: "\e916";
+}
+.dwelloicfont_mini_golf:before {
+  content: "\e917";
+}
+.dwelloicfont_golf_course:before {
+  content: "\e923";
+}
+.dwelloicfont_tennis_court:before {
+  content: "\e918";
+}
+.dwelloicfont_business_center:before {
+  content: "\e919";
+}
+.dwelloicfont_cycle_track:before {
+  content: "\e91a";
+}
+.dwelloicfont_swimming_pool:before {
+  content: "\e91b";
+}
+.dwelloicfont_snooker:before {
+  content: "\e91c";
+}
+.dwelloicfont_jogging_track:before {
+  content: "\e91d";
+}
+.dwelloicfont_gymnasium:before {
+  content: "\e91e";
+}
+.dwelloicfont_yoga:before {
+  content: "\e91f";
+}
+.dwelloicfont_school:before {
+  content: "\e920";
+}
+.dwelloicfont_badminton_court:before {
+  content: "\e921";
+}
+.dwelloicfont_tree_house:before {
+  content: "\e922";
+}
+.dwelloicfont_banquet_hall:before {
+  content: "\e947";
+}
+.dwelloicfont_tv_cable_connection:before {
+  content: "\e925";
+}
+.dwelloicfont_table_tennis:before {
+  content: "\e927";
+}
+.dwelloicfont_main_door:before {
+  content: "\e928";
+}
+.dwelloicfont_door_grill:before {
+  content: "\e950";
+}
+.dwelloicfont_internal_doors:before {
+  content: "\e962";
+}
+.dwelloicfont_balcony_doors:before {
+  content: "\e963";
+}
+.dwelloicfont_tree_canopied_deck:before {
+  content: "\e929";
+}
+.dwelloicfont_kids_pool:before {
+  content: "\e92a";
+}
+.dwelloicfont_bathroom_ewc_toilet_type:before {
+  content: "\e92b";
+}
+.dwelloicfont_water_heater:before {
+  content: "\e92c";
+}
+.dwelloicfont_gym2:before {
+  content: "\e92d";
+}
+.dwelloicfont_water_purifier:before {
+  content: "\e92e";
+}
+.dwelloicfont_concierge:before {
+  content: "\e92f";
+}
+.dwelloicfont_community_hall:before {
+  content: "\e930";
+}
+.dwelloicfont_door_fittings:before {
+  content: "\e931";
+}
+.dwelloicfont_internet:before {
+  content: "\e932";
+}
+.dwelloicfont_cricket:before {
+  content: "\e933";
+}
+.dwelloicfont_gas_supply:before {
+  content: "\e934";
+}
+.dwelloicfont_pool_deck:before {
+  content: "\e935";
+}
+.dwelloicfont_ac:before {
+  content: "\e936";
+}
+.dwelloicfont_ac_connection:before {
+  content: "\e914";
+}
+.dwelloicfont_spa:before {
+  content: "\e937";
+}
+.dwelloicfont_jungle_gym:before {
+  content: "\e938";
+}
+.dwelloicfont_conference_room:before {
+  content: "\e939";
+}
+.dwelloicfont_balcony_railings:before {
+  content: "\e93a";
+}
+.dwelloicfont_balcony:before {
+  content: "\e969";
+}
+.dwelloicfont_sewage_treatment_plant:before {
+  content: "\e93b";
+}
+.dwelloicfont_amphitheatre:before {
+  content: "\e93c";
+}
+.dwelloicfont_football:before {
+  content: "\e93d";
+}
+.dwelloicfont_football_court:before {
+  content: "\e9e6";
+}
+.dwelloicfont_senior_citizen_area:before {
+  content: "\e93e";
+}
+.dwelloicfont_township:before {
+  content: "\e93f";
+}
+.dwelloicfont_rainwater_harvesting:before {
+  content: "\e940";
+}
+.dwelloicfont_rock_climbing:before {
+  content: "\e941";
+}
+.dwelloicfont_p2page_possession:before {
+  content: "\e901";
+}
+.dwelloicfont_possession:before {
+  content: "\e972";
+}
+.dwelloicfont_project_area:before {
+  content: "\e906";
+}
+.dwelloicfont_p2page_project_size:before {
+  content: "\e96c";
+}
+.dwelloicfont_room_config:before {
+  content: "\e907";
+}
+.dwelloicfont_p2page_apartment_size:before {
+  content: "\e971";
+}
+.dwelloicfont_status:before {
+  content: "\e908";
+}
+.dwelloicfont_p2page_project_status:before {
+  content: "\e96d";
+}
+.dwelloicfont_authorized_secretary1:before {
+  content: "\ea33";
+}

@@ -1,0 +1,59 @@
+.articlesWrapper {
+  .articleContainer {
+    .article {
+      position: relative;
+      width: calc(20% - 5px);
+      display: inline-block;
+      float: left;
+      margin-right: 5px;
+      height: 225px;
+      border-radius: 5px;
+      // padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+      .articleBanner {
+        height: 110px;
+        width: 100%;
+        background-color: #fff;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .articleTitle {
+        padding: 10px;
+        color: #000;
+        font-family: Neusa Next Std Medium;
+        font-size: 16px;
+        height: 75px;
+        overflow: hidden;
+        white-space: normal;
+      }
+      .articleSummary {
+        font-size: 12px;
+        white-space: normal;
+        color: #8e8e8e;
+        line-height: 18px;
+        margin-top: 5px;
+        padding: 0 10px;
+        .dot {
+          display: inline-block;
+          margin: 2px 5px;
+          /* font-size: 0px; */
+          background-color: #8e8e8e;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.dummy {
+  width: calc(20% - 15px);
+  display: inline-block;
+  float: left;
+  height: 250px;
+  border-radius: 5px;
+}
