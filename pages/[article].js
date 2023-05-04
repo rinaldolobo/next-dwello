@@ -145,7 +145,9 @@ const Article = ({ articleData, categoriesData }) => {
                       {articleData.author}
                     </div>
                     <div className={styles.published}>
-                      <CustomDate dateString={articleData.created}></CustomDate>
+                      <CustomDate
+                        dateString={articleData.created * 1000}
+                      ></CustomDate>
                     </div>
                   </div>
                 </div>
