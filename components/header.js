@@ -1,4 +1,4 @@
-import styles from "@/styles/Header.module.scss";
+import styles from "@/styles/header.module.scss";
 import utilityStyles from "@/styles/utils.module.scss";
 import Image from "next/image";
 import Link from "next/link";
