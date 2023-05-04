@@ -13,8 +13,8 @@ const HomeArticleList = ({ articles }) => {
     <div className={styles.articlesWrapper}>
       {articles &&
         articles.map((article) => (
-          <Link href={`/${article.permalink}`}>
-            <div key={article.objectid} className={styles.articleContainer}>
+          <Link key={article.objectid} href={`/${article.permalink}`}>
+            <div className={styles.articleContainer}>
               <div className={styles.article}>
                 <div className={styles.articleBanner}>
                   <Image
