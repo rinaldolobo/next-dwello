@@ -3,7 +3,9 @@ import styles from "../styles/Home.module.scss";
 import utilityStyles from "../styles/utils.module.scss";
 import Layout from "@/components/layout";
 import { useEffect } from "react";
-import ArticleList from "@/components/articleList";
+import HomeArticleList from "@/components/homeArticleList";
+import Link from "next/link";
+import Header from "@/components/header";
 
 const groupBy = (data, key) => {
   return data.reduce((acc, item) => {
@@ -87,37 +89,12 @@ const Home = ({ groupedCategories }) => {
           </div>
         </div>
 
-        <div className={`${styles.newsHomeContainer} ${styles.containerFluid}`}>
+        <div
+          className={`${styles.newsHomeContainer} ${utilityStyles.containerFluid}`}
+        >
           <div className={styles.newsHeadInitial}>
             <div className={styles.searcher}>
-              <div className={styles.headerUnfixed}>
-                <div className={`${styles.wrapper} ${styles.containerFluid}`}>
-                  {/*<div className={styles.leftPart}></div>*/}
-                  <div className={styles.rightSearchPart}>
-                    <div className={styles.search}>
-                      <input
-                        className={styles.searchBox}
-                        type="text"
-                        placeholder="Enter a term to search"
-                      />
-                      <span
-                        className={`${utilityStyles.dwelloicfont} ${utilityStyles.dwelloicfont_search} ${styles.dwelloicfont}`}
-                      ></span>
-                    </div>
-                    <div className={styles.userProfile}>
-                      <Image
-                        src={
-                          "https://storage.googleapis.com/dwello_static_assets/images/new-mobile/dp_placeholder.jpg"
-                        }
-                        width={35}
-                        height={35}
-                        alt={"user"}
-                      />
-                    </div>
-                  </div>
-                  {/*<a class="logo" [href]="'/news'" routerLink="/news"></a>*/}
-                </div>
-              </div>
+              <Header headerStyle={"unfixed"} />
             </div>
           </div>
           {groupedCategories &&
@@ -135,11 +112,13 @@ const Home = ({ groupedCategories }) => {
                     <div className={styles.subCategory}>
                       {subcategory.sub_category_name}
                     </div>
-                    {/*<div (click)="gotoNextPage('/news/category',subcats.category,subcats.sub_category_id)" class="show-more">SHOW*/}
-                    {/*MORE</div>*/}
-                    <div className={styles.showMore}>SHOW MORE</div>
+                    <Link
+                      href={`/category/${subcategory.category}/${subcategory.sub_category_id}`}
+                    >
+                      <div className={styles.showMore}>SHOW MORE</div>
+                    </Link>
                     <div className={styles.parent}>
-                      <ArticleList articles={subcategory.articles} />
+                      <HomeArticleList articles={subcategory.articles} />
                     </div>
                   </div>
                 ))}

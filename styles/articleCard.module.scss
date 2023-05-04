@@ -1,0 +1,46 @@
+.articleCardWrapper {
+  width: calc(33% - 15px);
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  float: left;
+
+  .article {
+    display: inline-block;
+    text-decoration: none;
+    // width: calc(33% - 15px);
+    // margin-right: 15px;
+    float: left;
+    width: 100%;
+    .articleBanner {
+      width: 100%;
+      height: 200px;
+      //background-position: center;
+      //background-repeat: no-repeat;
+      //background-size: cover;
+      border: 1px solid #cacaca;
+      overflow: hidden;
+      border-radius: 4px;
+      background-color: #fff;
+      position: relative;
+      img {
+        object-fit: cover;
+      }
+    }
+    .articleTitle {
+      font-size: 20px;
+      height: 65px;
+      overflow: hidden;
+      padding: 10px 0;
+      color: #000000;
+      font-family: Neusa Next Std Medium;
+    }
+    .articleSummary {
+      color: #a4a4a4;
+      font-size: 14px;
+      height: 80px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+  }
+}

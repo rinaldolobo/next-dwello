@@ -1,0 +1,199 @@
+.newsExploreWrapper {
+  margin-top: 50px;
+  background-color: #f4f4f4;
+  .searchHead {
+    background-color: #ffffff;
+    height: 100px;
+    margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    z-index: 1;
+    .searcher {
+      font-size: 24px;
+      font-weight: 700;
+      color: #000000;
+      max-width: 1200px;
+      margin: 0 auto;
+      line-height: 100px;
+      text-transform: uppercase;
+      .dwelloicfont_arrowLeft {
+        display: inline-block;
+        float: left;
+        color: #000000;
+        font-size: 28px;
+        font-weight: 700;
+        cursor: pointer;
+        line-height: 100px;
+        margin-right: 10px;
+      }
+      .filterBy {
+        display: inline-block;
+        float: left;
+      }
+    }
+  }
+  .newsExploreContainer {
+    margin: 150px auto 0;
+    max-width: 1200px;
+
+    .searchBar {
+      display: inline-block;
+      float: left;
+      width: 100%;
+      padding: 35px 0;
+      position: fixed;
+      max-width: 1150px;
+      top: 50px;
+      background: -webkit-gradient(
+        left top,
+        left bottom,
+        color-stop(0%, rgba(244, 244, 244, 1)),
+        color-stop(63%, rgba(244, 244, 244, 1)),
+        color-stop(88%, rgba(244, 244, 244, 1)),
+        color-stop(100%, rgba(244, 244, 244, 0))
+      );
+      background: -webkit-linear-gradient(
+        top,
+        rgba(244, 244, 244, 1) 0%,
+        rgba(244, 244, 244, 1) 63%,
+        rgba(244, 244, 244, 1) 88%,
+        rgba(244, 244, 244, 0) 100%
+      );
+      background: -o-linear-gradient(
+        top,
+        rgba(244, 244, 244, 1) 0%,
+        rgba(244, 244, 244, 1) 63%,
+        rgba(244, 244, 244, 1) 88%,
+        rgba(244, 244, 244, 0) 100%
+      );
+      background: -ms-linear-gradient(
+        top,
+        rgba(244, 244, 244, 1) 0%,
+        rgba(244, 244, 244, 1) 63%,
+        rgba(244, 244, 244, 1) 88%,
+        rgba(244, 244, 244, 0) 100%
+      );
+      background: linear-gradient(
+        to bottom,
+        rgba(244, 244, 244, 1) 0%,
+        rgba(244, 244, 244, 1) 63%,
+        rgba(244, 244, 244, 1) 88%,
+        rgba(244, 244, 244, 0) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#f4f4f4', GradientType=0 );
+      .searchContainer {
+        width: 50%;
+        background-color: #fff;
+        display: inline-block;
+        float: left;
+        padding: 15px;
+        min-width: 400px;
+        border-radius: 6px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        .dwelloicfont_arrowLeft {
+          display: inline-block;
+          float: left;
+          color: #000000;
+          font-size: 28px;
+          font-weight: 700;
+          cursor: pointer;
+        }
+
+        .searchBox {
+          display: inline-block;
+          float: left;
+          width: calc(100% - 50px);
+          .inputStyler {
+            height: 30px;
+            outline: none;
+            border: none;
+            width: 100%;
+            color: #888888;
+            font-size: 18px;
+            margin: 0 15px;
+          }
+        }
+        .dwelloicfont_search {
+          display: inline-block;
+          float: left;
+          color: #333333;
+          font-size: 18px;
+          position: relative;
+          top: 5px;
+          float: right;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .noResults {
+      max-width: 1200px;
+      display: inline-block;
+      width: 100%;
+      margin: 250px 0 100px;
+      text-align: center;
+      .dwelloicfont_publishing_noresults {
+        color: #aaaaaa;
+        font-size: 72px;
+      }
+      .noResultText {
+        color: #aaaaaa;
+        font-weight: 700;
+        width: 100%;
+        letter-spacing: 1.2px;
+        margin: 0 auto;
+        font-size: 20px;
+      }
+    }
+
+    .resultItems {
+      display: inline-block;
+      float: left;
+      width: 100%;
+      padding-top: 30px;
+    }
+
+    .contentLoader {
+      display: inline-block;
+      width: 100%;
+      float: left;
+      height: 50px;
+    }
+  }
+  .loader {
+    text-align: center;
+    .cThreeDotsLoader {
+      position: relative;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: -10px (10px * 1.2) 10px;
+      animation-fill-mode: both;
+      animation: threeDotsLoaderAnimation 1s infinite ease-in-out;
+      animation-delay: -0.16s;
+      color: #adadad;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 0;
+        animation: threeDotsLoaderAnimation 1s infinite ease-in-out;
+        border-radius: 50%;
+      }
+
+      &:before {
+        left: -10px * 1.2;
+        animation-delay: -0.16s * 2;
+      }
+
+      &:after {
+        left: 10px * 1.2;
+      }
+    }
+  }
+}

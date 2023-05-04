@@ -1,3 +1,8 @@
+.containerFluid {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 @font-face {
   font-family: "dwelloicfont";
   src: url("https://storage.googleapis.com/mumbai.cdn.dwello.in/FontsCompressed/dwelloicfont.ttf?cfs5jp")
@@ -834,7 +839,7 @@
 .dwelloicfont_maharera:before {
   content: "\e981";
 }
-.dwelloicfont_arrow-left:before {
+.dwelloicfont_arrowLeft:before {
   content: "\e97f";
 }
 .dwelloicfont_contact_us_trophy:before {
