@@ -13,9 +13,9 @@ const Header = ({ headerStyle }) => {
       <div className={`${styles.wrapper} container-fluid`}>
         {headerStyle === "fixed" && (
           <div className={styles.leftPart}>
-            <Link href={`/`}>
+            <a href={`/`}>
               <div className={styles.logo}></div>
-            </Link>
+            </a>
           </div>
         )}
 

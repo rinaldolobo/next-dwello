@@ -1,6 +1,7 @@
 .newsExploreWrapper {
   margin-top: 50px;
   background-color: #f4f4f4;
+  display: flex;
   .searchHead {
     background-color: #ffffff;
     height: 100px;
@@ -34,7 +35,7 @@
     }
   }
   .newsExploreContainer {
-    margin: 150px auto 0;
+    margin: 100px auto 0;
     max-width: 1200px;
 
     .searchBar {

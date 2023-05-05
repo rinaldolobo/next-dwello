@@ -4,6 +4,8 @@ import Header from "@/components/header";
 import styles from "../../styles/categoryDetails.module.scss";
 import utilityStyles from "../../styles/utils.module.scss";
 import ArticleCard from "@/components/articleCard";
+import ContentLoader from "@/components/contentLoader";
+import InfiniteScroll from "react-infinite-scroll-component";
 
 const getArticles = (offset, limit, category, subcategory = null) => {
   return fetch(
@@ -27,7 +29,7 @@ export async function getServerSideProps({ params }) {
   let subCategory = categoryDetails[1] ? categoryDetails[1] : null;
   console.log(category, subCategory);
 
-  let list = await getArticles(0, 10, category, subCategory);
+  let list = await getArticles(0, 18, category, subCategory);
   console.log(list);
   articles = list["results"];
   // Return the data as props
@@ -37,13 +39,10 @@ export async function getServerSideProps({ params }) {
 }
 
 const ArticlesByCategory = ({ articles, category, subCategory }) => {
-  // const [articleList, setArticleList] = useState([]);
+  const [articleList, setArticleList] = useState(articles);
+  const [getMore, setGetMore] = useState(true);
+  const [offset, setOffset] = useState(0);
   const router = useRouter();
-
-  // useEffect(() => {
-  //   console.log(articles);
-  //   setArticleList(articles);
-  // }, [articles]);
 
   const getSearchTitle = () => {
     if (subCategory) {
@@ -52,6 +51,28 @@ const ArticlesByCategory = ({ articles, category, subCategory }) => {
       return category.split("_").join(" ");
     }
   };
+
+  const loadMore = () => {
+    console.log("more", getMore);
+    if (getMore) {
+      setOffset(offset + 18);
+    }
+  };
+
+  const getMoreArticles = async () => {
+    const list = await getArticles(offset, 18, category, subCategory);
+    console.log(list);
+    const arts = await list["results"];
+    setGetMore(arts.length > 0);
+    let loadedArticles = articleList.length > 0 ? articleList : articles;
+    setArticleList([...loadedArticles, ...arts]);
+  };
+
+  useEffect(() => {
+    if (offset > 0) {
+      getMoreArticles();
+    }
+  }, [offset]);
 
   return (
     <div>
@@ -62,7 +83,7 @@ const ArticlesByCategory = ({ articles, category, subCategory }) => {
             <div
               className={`${utilityStyles.dwelloicfont} ${utilityStyles.dwelloicfont_arrowLeft} ${styles.dwelloicfont_arrowLeft}`}
               onClick={() => {
-                router.back();
+                window.history.back();
               }}
             />
             <div className={styles.filterBy}>{getSearchTitle()}</div>
@@ -70,14 +91,33 @@ const ArticlesByCategory = ({ articles, category, subCategory }) => {
         </div>
         <div
           className={`${styles.newsExploreContainer} ${utilityStyles.containerFluid}`}
-          style={{ marginTop: "150px" }}
         >
           <div className={styles.resultItems}>
-            {articles &&
-              articles.map((article) => (
-                <ArticleCard key={article.objectid} article={article} />
-              ))}
+            {articleList && (
+              <InfiniteScroll
+                dataLength={articleList.length}
+                next={loadMore}
+                // style={{ display: "flex", flexDirection: "column-reverse" }} //To put endMessage and loader to the top.
+                hasMore={getMore}
+                loader={
+                  <div className={styles.contentLoader}>
+                    <ContentLoader />
+                  </div>
+                }
+              >
+                <>
+                  {articleList.map((article) => (
+                    <ArticleCard key={article.objectid} article={article} />
+                  ))}
+                </>
+              </InfiniteScroll>
+            )}
           </div>
+          {/*{gettingData && (*/}
+          {/*  <div className={styles.contentLoader}>*/}
+          {/*    <ContentLoader />*/}
+          {/*  </div>*/}
+          {/*)}*/}
         </div>
       </div>
     </div>

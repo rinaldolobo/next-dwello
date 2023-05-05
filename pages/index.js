@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import HomeArticleList from "@/components/homeArticleList";
 import Link from "next/link";
 import Header from "@/components/header";
+import { useRouter } from "next/router";
 
 const groupBy = (data, key) => {
   return data.reduce((acc, item) => {
@@ -62,6 +63,8 @@ export async function getServerSideProps() {
 }
 
 const Home = ({ groupedCategories }) => {
+  const router = useRouter();
+
   useEffect(() => {
     console.log(groupedCategories);
   }, [groupedCategories]);
@@ -112,11 +115,11 @@ const Home = ({ groupedCategories }) => {
                     <div className={styles.subCategory}>
                       {subcategory.sub_category_name}
                     </div>
-                    <Link
+                    <a
                       href={`/category/${subcategory.category}/${subcategory.sub_category_id}`}
                     >
                       <div className={styles.showMore}>SHOW MORE</div>
-                    </Link>
+                    </a>
                     <div className={styles.parent}>
                       <HomeArticleList articles={subcategory.articles} />
                     </div>

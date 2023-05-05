@@ -108,14 +108,14 @@ const Article = ({ articleData, categoriesData }) => {
                       }}
                     >
                       {categoriesData[articleData.category].map((cat) => (
-                        <Link
+                        <a
                           key={cat.sub_category_name}
                           href={`/category/${articleData.category}/${cat.sub_category_id}`}
                         >
                           <li className={styles.subCatItem}>
                             {cat.sub_category_name}
                           </li>
-                        </Link>
+                        </a>
                       ))}
                     </ul>
                   )}
