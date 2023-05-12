@@ -5,7 +5,7 @@ import Link from "next/link";
 const ArticleCard = ({ article }) => {
   return (
     <div className={styles.articleCardWrapper}>
-      <a href={`/${article.permalink}`}>
+      <a href={`/news/${article.permalink}`}>
         <div className={styles.article}>
           <div className={styles.articleBanner}>
             <Image

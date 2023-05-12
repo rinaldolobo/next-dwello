@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  distDir: "build",
   images: {
-    unoptimized: true,
+    // unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -15,6 +16,9 @@ const nextConfig = {
       },
     ],
   },
+  // experimental: {
+  //   webVitalsAttribution: ["FCP", "LCP", "CLS", "FID", "TTFB", "INP"],
+  // },
 };
 
 module.exports = nextConfig;

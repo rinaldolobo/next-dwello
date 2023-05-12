@@ -1,0 +1,67 @@
+.projectWrapper {
+  background: #ffffff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  display: flex;
+  width: calc(33% - 20px);
+  overflow: hidden;
+  margin: 0 20px 20px 0;
+  padding: 10px;
+  flex-direction: column;
+  .projectIconWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 17px;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+  .projectDataWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    .pdRow1 {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 15px;
+      justify-content: space-between;
+      .pdName {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #282a29;
+        flex: 1;
+      }
+      .pdPrice {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        color: #282a29;
+      }
+    }
+    .pdRow2 {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 2px;
+      .pdData {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #636466;
+      }
+    }
+    .pdCommonRow {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #000000;
+      margin-top: 10px;
+    }
+  }
+}

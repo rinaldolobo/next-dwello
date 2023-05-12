@@ -13,7 +13,7 @@ const HomeArticleList = ({ articles }) => {
     <div className={styles.articlesWrapper}>
       {articles &&
         articles.map((article) => (
-          <a key={article.objectid} href={`/${article.permalink}`}>
+          <a key={article.objectid} href={`/news/${article.permalink}`}>
             <div className={styles.articleContainer}>
               <div className={styles.article}>
                 <div className={styles.articleBanner}>

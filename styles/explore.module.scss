@@ -1,0 +1,214 @@
+.exploreContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1366px;
+  margin: 70px auto 0;
+  width: 100%;
+  background: #f7f7f7;
+  .exploreMetaContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px 25px;
+    .exploreBreadCrumb {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #707070;
+    }
+    .exploreTitleWrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 20px;
+      .titleFiller {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 36px;
+        color: #707070;
+        margin: 0 10px 0 0;
+      }
+      .titleConfig {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+        background: #dde7fe;
+        padding: 11px 7px;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  .exploreDataContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    .exploreDataLeft {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      .exploreFilterSort {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        .exploreFilters {
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          justify-content: flex-start;
+        }
+        .exploreFilterPill {
+          display: flex;
+          padding: 7px 16px;
+          background: #ffffff;
+          border: 1px solid #c8c8c8;
+          border-radius: 30px;
+          margin-right: 12px;
+          cursor: pointer;
+          flex-direction: column;
+          position: relative;
+          .exploreFilterOptions {
+            position: absolute;
+            display: none;
+            flex-direction: column;
+            z-index: 2;
+            width: 300px;
+            top: calc(100% + 5px);
+            background: #ffffff;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            left: 0;
+            padding: 10px;
+            .explorePseudoWrapper {
+              border: 0.5px solid #c8c8c8;
+              border-radius: 16px;
+              padding: 16px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              .optionPill {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 7px 12px;
+                background: #ffffff;
+                border: 1px solid #c8c8c8;
+                border-radius: 30px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                margin-bottom: 10px;
+                &:last-child {
+                  margin-bottom: 0;
+                }
+                .pillName {
+                  color: #000000;
+                  margin-right: 5px;
+                  text-transform: capitalize;
+                }
+                .pillCount {
+                  color: #98c93c;
+                }
+              }
+            }
+          }
+          &:hover {
+            .exploreFilterOptions {
+              display: flex;
+            }
+          }
+        }
+      }
+      .exploreResults {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+    .exploreDataRight {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      .exploreInsightWrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 20px;
+        .exploreInsightsTitle {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          color: #000000;
+          margin-bottom: 20px;
+          text-transform: capitalize;
+        }
+        .exploreInsightData {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background: #ffffff;
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+          border-radius: 25px;
+          padding: 10px;
+          max-height: 300px;
+          overflow: auto;
+          .insightItemLink {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 10px 10px 0;
+            background: #ffffff;
+            border: 1px solid #c8c8c8;
+            border-radius: 30px;
+            padding: 8px 14px;
+            min-width: 80px;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            .insightLbl {
+              font-weight: 400;
+              font-size: 14px;
+              display: flex;
+            }
+            &:hover {
+              background: #e6ffce;
+              border-color: #80c341;
+            }
+          }
+          .insightItem {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 10px 10px 0;
+            background: #ffffff;
+            border: 1px solid #c8c8c8;
+            border-radius: 30px;
+            padding: 8px 14px;
+            min-width: 80px;
+            justify-content: center;
+            text-decoration: none;
+            color: inherit;
+            .insightLbl {
+              font-weight: 400;
+              font-size: 14px;
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+}

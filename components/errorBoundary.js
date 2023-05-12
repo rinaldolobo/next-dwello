@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "@/components/header";
+import HeaderKb from "@/components/headerKb";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class ErrorBoundary extends React.Component {
       // You can render any custom fallback UI
       return (
         <div>
-          <Header headerStyle={"fixed"} />
+          <HeaderKb headerStyle={"fixed"} />
           <div
             className={"container container-fluid"}
             style={{ marginTop: "100px", textAlign: "center" }}

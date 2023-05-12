@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Header from "@/components/header";
-import styles from "../../styles/categoryDetails.module.scss";
-import utilityStyles from "../../styles/utils.module.scss";
+import HeaderKb from "@/components/headerKb";
+import styles from "../../../styles/categoryDetails.module.scss";
+import utilityStyles from "../../../styles/utils.module.scss";
 import ArticleCard from "@/components/articleCard";
 import ContentLoader from "@/components/contentLoader";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -19,18 +19,23 @@ const getArticles = (offset, limit, category, subcategory = null) => {
     });
 };
 
-export async function getServerSideProps({ params }) {
+export async function getServerSideProps({ params, res, resolvedUrl }) {
+  res.setHeader("Cache-Control", "max-age=5400");
+
   const { categoryDetails } = params;
-  console.log(categoryDetails);
+  // console.log(categoryDetails);
 
   let articles;
 
   let category = categoryDetails[0];
   let subCategory = categoryDetails[1] ? categoryDetails[1] : null;
-  console.log(category, subCategory);
+  // console.log(category, subCategory);
+  console.log("fetch for " + resolvedUrl + " started:", new Date().getTime());
 
   let list = await getArticles(0, 18, category, subCategory);
-  console.log(list);
+  // console.log(list);
+  console.log("fetch for " + resolvedUrl + " started:", new Date().getTime());
+
   articles = list["results"];
   // Return the data as props
   return {
@@ -76,7 +81,7 @@ const ArticlesByCategory = ({ articles, category, subCategory }) => {
 
   return (
     <div>
-      <Header headerStyle={"fixed"} />
+      <HeaderKb headerStyle={"fixed"} />
       <div className={styles.newsExploreWrapper}>
         <div className={styles.searchHead}>
           <div className={`${styles.searcher} ${utilityStyles.containerFluid}`}>

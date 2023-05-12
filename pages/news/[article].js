@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Header from "@/components/header";
+import HeaderKb from "@/components/headerKb";
 import styles from "@/styles/article.module.scss";
 import utilityStyles from "@/styles/utils.module.scss";
 import Image from "next/image";
@@ -8,9 +8,12 @@ import CustomDate from "@/components/date";
 import DOMPurify from "isomorphic-dompurify";
 import Link from "next/link";
 
-export async function getServerSideProps({ params }) {
+export async function getServerSideProps({ params, res, resolvedUrl }) {
+  res.setHeader("Cache-Control", "max-age=5400");
   const { article } = params;
   console.log(article);
+
+  console.log("fetch for " + resolvedUrl + " started:", new Date().getTime());
 
   const articleRes = await fetch(
     "https://marketing.dwello.in/publishing/article.json?permalink=" + article
@@ -28,6 +31,8 @@ export async function getServerSideProps({ params }) {
 
   const categoriesData = await categoriesRes.json();
 
+  console.log("fetch for " + resolvedUrl + " started:", new Date().getTime());
+
   // Return the data as props
   return {
     props: { articleData, categoriesData },
@@ -40,7 +45,7 @@ const Article = ({ articleData, categoriesData }) => {
 
   return (
     <div>
-      <Header headerStyle={"fixed"} />
+      <HeaderKb headerStyle={"fixed"} />
       {articleData && (
         <div className={styles.newsWrapper}>
           <div className={`${styles.newsPageContainer} container`}>
@@ -110,7 +115,7 @@ const Article = ({ articleData, categoriesData }) => {
                       {categoriesData[articleData.category].map((cat) => (
                         <a
                           key={cat.sub_category_name}
-                          href={`/category/${articleData.category}/${cat.sub_category_id}`}
+                          href={`/news/category/${articleData.category}/${cat.sub_category_id}`}
                         >
                           <li className={styles.subCatItem}>
                             {cat.sub_category_name}
